@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Milton Stanley"]
   spec.email         = ["milton.stanley@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Calculates and groups CubeSums}
+  spec.description   = %q{Visit http://home.earthlink.net/~bobseller1/id89.html for a more-detailed description}
+  spec.homepage      = "http://www.milton-stanley.com"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
