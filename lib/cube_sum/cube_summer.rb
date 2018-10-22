@@ -14,5 +14,12 @@ module CubeSum
     def sum_array(x)
       x.inject(0){|sum,x| sum + x }
     end
+
+    def single_cycle(integer)
+      char_array = get_digit_array(integer)
+      cubed_array = cube_array(char_array)
+      result = sum_array(cubed_array)
+      result
+    end
   end
 end

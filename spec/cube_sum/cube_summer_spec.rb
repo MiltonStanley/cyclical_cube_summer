@@ -6,4 +6,8 @@ RSpec.describe CubeSum::CubeSummer do
     it { expect(subject.cube_array([1,2,5])).to eq([1,8,125]) }
     it { expect(subject.sum_array([1,2,5])).to eq(8) }
   end
+
+  context 'single cycle for numbers' do
+    it { expect(subject.single_cycle(153)).to eq(153) }
+  end
 end
