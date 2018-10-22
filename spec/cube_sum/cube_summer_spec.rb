@@ -2,6 +2,7 @@ require 'spec_helper'
 
 RSpec.describe CubeSum::CubeSummer do
   let(:triangles) { [153, 370, 371] }
+  let(:found4triangles) { [407] }
 
   context 'basic functions' do
     it { expect(subject.get_digit_array(125)).to eq([1,2,5]) }
@@ -14,6 +15,14 @@ RSpec.describe CubeSum::CubeSummer do
       context 'main 3 numbers' do
         it 'are triangular from the spec constant' do
           triangles.each do |num|
+            expect(subject.single_cycle(num)).to eq(num)
+          end
+        end
+      end
+
+      context 'found 4-type triangles' do
+        it 'are also triangular' do
+          found4triangles.each do |num|
             expect(subject.single_cycle(num)).to eq(num)
           end
         end
