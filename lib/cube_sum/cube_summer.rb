@@ -1,5 +1,8 @@
 module CubeSum
   class CubeSummer
+
+    TRIANGULAR_NUMBERS = [153, 371, 370]
+
     def get_digit_array(integer)
       integer.to_s.chars.map(&:to_i)
     end
