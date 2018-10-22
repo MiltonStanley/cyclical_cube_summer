@@ -26,7 +26,7 @@ RSpec.describe CubeSum::CubeSummer do
     context 'No other numbers are triangular' do
       it 'finds no others' do
         (1..100).each do |integer|
-          next if triangles.include?(integer) || integer = 1
+          next if triangles.include?(integer) || integer == 1
           actual = subject.single_cycle(integer)
           expect(actual).not_to eq(integer)
         end
