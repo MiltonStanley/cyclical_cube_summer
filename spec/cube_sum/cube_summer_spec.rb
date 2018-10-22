@@ -3,6 +3,7 @@ require 'spec_helper'
 RSpec.describe CubeSum::CubeSummer do
   let(:triangles) { [153, 370, 371] }
   let(:found4triangles) { [407] }
+  let(:all_triangles) { triangles.push(found4triangles).flatten }
 
   context 'basic functions' do
     it { expect(subject.get_digit_array(125)).to eq([1,2,5]) }
@@ -38,8 +39,12 @@ RSpec.describe CubeSum::CubeSummer do
 
     context 'No other numbers are triangular' do
       it 'finds no others' do
-        (1..100).each do |integer|
-          next if triangles.include?(integer) || integer == 1
+        max = 100_000_000
+        puts "\t\t\tCalculating cube-sums up to #{max}"
+        (1..max).each do |integer|
+          percent = integer.to_f / max.to_f * 100.0
+          print "\t\t\t#{(percent*100).floor/100.0}% done\r"
+          next if all_triangles.include?(integer) || integer == 1
           actual = subject.single_cycle(integer)
           expect(actual).not_to eq(integer)
         end
