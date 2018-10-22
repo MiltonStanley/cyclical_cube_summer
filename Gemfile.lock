@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cube_sum (0.1.0)
+    cyclical_cube_sum (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -42,7 +42,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  cube_sum!
+  cyclical_cube_sum!
   rake
   rspec
   rubocop (~> 0.52.1)

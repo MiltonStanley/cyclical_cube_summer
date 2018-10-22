@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-RSpec.describe CubeSum do
+RSpec.describe CyclicalCubeSum do
   it "has a version number" do
-    expect(CubeSum::VERSION).not_to be nil
+    expect(CyclicalCubeSum::VERSION).not_to be nil
   end
 end

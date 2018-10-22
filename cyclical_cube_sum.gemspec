@@ -1,15 +1,15 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "cube_sum/version"
+require "cyclical_cube_sum/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "cube_sum"
-  spec.version       = CubeSum::VERSION
+  spec.name          = "cyclical_cube_sum"
+  spec.version       = CyclicalCubeSum::VERSION
   spec.authors       = ["Milton Stanley"]
   spec.email         = ["milton.stanley@gmail.com"]
 
-  spec.summary       = %q{Calculates and groups CubeSums}
+  spec.summary       = %q{Calculates and groups Cyclical Cube Sums}
   spec.description   = %q{Visit http://home.earthlink.net/~bobseller1/id89.html for a more-detailed description}
   spec.homepage      = "http://www.milton-stanley.com"
   spec.license       = "MIT"

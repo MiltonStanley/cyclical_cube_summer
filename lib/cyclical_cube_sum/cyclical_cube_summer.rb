@@ -1,5 +1,5 @@
-module CubeSum
-  class CubeSummer
+module CyclicalCubeSum
+  class CyclicalCubeSummer
 
     TRIANGULAR_NUMBERS = [153, 371, 370]
     FOUND_TRIANGLES = [407]

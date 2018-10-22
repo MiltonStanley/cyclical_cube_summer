@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe CubeSum::CubeSummer do
+RSpec.describe CyclicalCubeSum::CyclicalCubeSummer do
   let(:triangles) { [153, 370, 371] }
   let(:found4triangles) { [407] }
   let(:all_triangles) { triangles.push(found4triangles).flatten }

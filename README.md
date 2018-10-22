@@ -1,6 +1,6 @@
-# CubeSum
+# CyclicalCubeSum
 
-CubeSum calculates the veracity and accuracy of the "153" data fround [here](http://home.earthlink.net/~bobseller1/id89.html).
+CyclicalCubeSum calculates the veracity and accuracy of the "153" data fround [here](http://home.earthlink.net/~bobseller1/id89.html).
 
 
 ## Installation
@@ -8,7 +8,7 @@ CubeSum calculates the veracity and accuracy of the "153" data fround [here](htt
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'cube_sum'
+gem 'cyclical_cube_sum'
 ```
 
 And then execute:
@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install cube_sum
+    $ gem install cyclical_cube_sum
 
 ## Usage
 
@@ -31,7 +31,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/MiltonStanley/cube_sum.
+Bug reports and pull requests are welcome on GitHub at https://github.com/MiltonStanley/cyclical_cube_sum.
 
 ## License
 
