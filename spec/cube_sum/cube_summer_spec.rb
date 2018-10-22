@@ -11,9 +11,11 @@ RSpec.describe CubeSum::CubeSummer do
 
   context 'single cycle for numbers' do
     context 'triangular numbers' do
-      it 'are triangular from the spec constant' do
-        triangles.each do |num|
-          expect(subject.single_cycle(num)).to eq(num)
+      context 'main 3 numbers' do
+        it 'are triangular from the spec constant' do
+          triangles.each do |num|
+            expect(subject.single_cycle(num)).to eq(num)
+          end
         end
       end
     end
