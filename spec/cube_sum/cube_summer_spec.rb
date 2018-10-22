@@ -62,14 +62,19 @@ RSpec.describe CubeSum::CubeSummer do
 
     it 'works for numbers given in the article' do
       examples = {
-        1 => 1,
+        1 => :loop,
         2 => 371,
         3 => 153,
+        4 => :loop,
+        6 => 153,
+        7 => 370,
+        8 => 371,
+        9 => 153,
+        10 => :loop,
         92 => 371,
         666 => 153
       }
       examples.each do |start, result|
-        puts "#{start} - #{result}"
         expect(subject.full_cycle(start)).to eq(result)
       end
     end

@@ -26,13 +26,14 @@ module CubeSum
 
     def full_cycle(integer)
       return :triangle if ALL_TRIANGLES.include?(integer)
-      puts "=========== FULL_CYCLE for #{integer} ========"
       result = single_cycle(integer)
-      puts "\t#{result}"
+      return :loop if result == integer
       count = 0
-      until(result == integer || count == 100)
-        count += 1
+      result_list = []
+      until(count == 99 || ALL_TRIANGLES.include?(result)) # || result_list.include?(result))s
         result = single_cycle(result)
+        return :loop if result_list.include? result #puts "Result list: #{result_list}"
+        result_list << result
       end
       result
     end
