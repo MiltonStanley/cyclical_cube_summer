@@ -15,7 +15,7 @@ RSpec.describe CubeSum::CubeSummer do
       it { expect(subject.single_cycle(371)).to eq(371) }
     end
 
-    context 'other numbers' do
+    context 'Other numbers' do
       it { expect(subject.single_cycle(666)).to eq(648) }
       it { expect(subject.single_cycle(9)).to eq(729) }
       it { expect(subject.single_cycle(737)).to eq(713) }
