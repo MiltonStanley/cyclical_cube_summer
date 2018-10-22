@@ -1,6 +1,6 @@
 module CubeSum
   class CubeSummer
-    def cuber(x)
+    def cube(x)
       return x**3
     end
   end
