@@ -1,7 +1,7 @@
 module CubeSum
   class CubeSummer
     def cube(x)
-      return x**3
+      x**3
     end
 
     def sum(x)
