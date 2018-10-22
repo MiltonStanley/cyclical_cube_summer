@@ -38,7 +38,7 @@ RSpec.describe CubeSum::CubeSummer do
     end
 
     context 'No other numbers are triangular' do
-      it 'finds no others' do
+      it 'finds no others from 1-1000' do
         max = 1_000
         puts "\t\t\tCalculating cube-sums up to #{max}"
         (1..max).each do |integer|
