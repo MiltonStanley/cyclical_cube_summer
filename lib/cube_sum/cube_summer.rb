@@ -7,5 +7,9 @@ module CubeSum
     def sum(x)
       x.to_s.chars.map(&:to_i).inject(0){|sum,x| sum + x }
     end
+
+    def digitize(x)
+      x.to_s.chars.map(&:to_i)
+    end
   end
 end
