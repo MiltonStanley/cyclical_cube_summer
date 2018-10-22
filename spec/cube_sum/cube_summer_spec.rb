@@ -9,5 +9,10 @@ RSpec.describe CubeSum::CubeSummer do
 
   context 'single cycle for numbers' do
     it { expect(subject.single_cycle(153)).to eq(153) }
+    it { expect(subject.single_cycle(666)).to eq(648) }
+    it { expect(subject.single_cycle(9)).to eq(729) }
+    it { expect(subject.single_cycle(737)).to eq(713) }
+    it { expect(subject.single_cycle(713)).to eq(371) }
+    it { expect(subject.single_cycle(371)).to eq(371) }
   end
 end
