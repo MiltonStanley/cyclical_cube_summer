@@ -39,7 +39,7 @@ RSpec.describe CubeSum::CubeSummer do
 
     context 'No other numbers are triangular' do
       it 'finds no others' do
-        max = 100_000_000
+        max = 1_000
         puts "\t\t\tCalculating cube-sums up to #{max}"
         (1..max).each do |integer|
           percent = integer.to_f / max.to_f * 100.0
@@ -48,6 +48,15 @@ RSpec.describe CubeSum::CubeSummer do
           actual = subject.single_cycle(integer)
           expect(actual).not_to eq(integer)
         end
+        puts
+      end
+    end
+  end
+
+  context 'full cycle for numbers' do
+    it 'works for all known triangles' do
+      all_triangles.each do |num|
+        expect(subject.full_cycle(num)).to eq(:triangle)
       end
     end
   end
